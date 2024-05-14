@@ -51,10 +51,6 @@ modules:
       - type: git
         url: https://github.com/minetest/minetest.git
 
-      - type: git
-        url: https://github.com/minetest/irrlicht.git
-        dest: lib/irrlichtmt
-
       - type: script
         dest-filename: minetest.sh
         commands:
