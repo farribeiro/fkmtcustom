@@ -42,6 +42,7 @@ modules:
     config-opts:
       - "-DENABLE_CURSES=0"
       - "-DENABLE_GETTEXT=1"
+      - "-DUSE_SDL2=TRUE"
     cleanup:
       - "/share/minetest/games/devtest"
     post-install:
