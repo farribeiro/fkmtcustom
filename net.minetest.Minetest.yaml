@@ -8,17 +8,18 @@ rename-desktop-file: net.minetest.minetest.desktop
 rename-icon: minetest
 copy-icon: true
 finish-args:
-  - "--socket=wayland"
-  - "--socket=pulseaudio"
-  - "--device=all"
-  - "--share=network"
-  - "--share=ipc"
+  - --socket=wayland
+  - --socket=pulseaudio
+  - --device=all
+  - --share=network
+  - --env=MESA_LOADER_DRIVER_OVERRIDE=zink
+  - --env=MANGOHUD_CONFIG=full
 cleanup:
-  - "/include"
-  - "/lib/pkgconfig"
-  - "/share/aclocal"
-  - "/share/gtk-doc"
-  - "/share/man"
+  - /include
+  - /lib/pkgconfig
+  - /share/aclocal
+  - /share/gtk-doc
+  - /share/man
   - "*.la"
   - "*.a"
 
@@ -32,7 +33,7 @@ modules:
     make-install-args:
       - PREFIX=/app
     cleanup:
-      - "/bin"
+      - /bin
     sources:
       - type: git
         url: https://github.com/LuaJIT/LuaJIT.git
