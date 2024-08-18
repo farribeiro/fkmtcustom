@@ -55,4 +55,4 @@ modules:
       - type: script
         dest-filename: minetest.sh
         commands:
-          - 'MINETEST_USER_PATH=$HOME/.var/app/net.minetest.Minetest/.minetest exec minetest.bin "$@"'
+          - 'MINETEST_USER_PATH=$HOME/.var/app/net.minetest.minetest/.minetest exec minetest.bin "$@"'
