@@ -10,6 +10,7 @@ finish-args:
   - --socket=pulseaudio
   - --device=all
   - --share=network
+  - --share=ipc
   - --env=MESA_LOADER_DRIVER_OVERRIDE=zink
   - --env=MANGOHUD_CONFIG=full
 cleanup:
