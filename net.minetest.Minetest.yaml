@@ -1,9 +1,11 @@
-app-id: net.minetest.minetest
+app-id: org.luanti.luanti
 runtime: org.freedesktop.Platform
-runtime-version: "24.08"
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
-command: minetest
-rename-icon: minetest
+command: luanti
+rename-icon: luanti
+rename-appdata-file: net.minetest.minetest.metainfo.xml
+rename-desktop-file: net.minetest.minetest.desktop
 copy-icon: true
 finish-args:
   - --socket=wayland
@@ -45,13 +47,13 @@ modules:
     cleanup:
       - "/share/minetest/games/devtest"
     post-install:
-      - mv $FLATPAK_DEST/bin/minetest $FLATPAK_DEST/bin/minetest.bin
-      - install -Dm755 minetest.sh $FLATPAK_DEST/bin/minetest
+      - mv $FLATPAK_DEST/bin/luanti $FLATPAK_DEST/bin/luanti.bin
+      - install -Dm755 luanti.sh $FLATPAK_DEST/bin/luanti
     sources:
       - type: git
         url: https://github.com/minetest/minetest.git
 
       - type: script
-        dest-filename: minetest.sh
+        dest-filename: luanti.sh
         commands:
-          - 'MINETEST_USER_PATH=$HOME/.var/app/net.minetest.minetest/.minetest exec minetest.bin "$@"'
+          - 'MINETEST_USER_PATH=$HOME/.var/app/org.luanti.luanti/.luanti exec luanti.bin "$@"'
