@@ -51,7 +51,7 @@ modules:
       - install -Dm755 luanti.sh $FLATPAK_DEST/bin/luanti
     sources:
       - type: git
-        url: https://github.com/minetest/minetest.git
+        url: https://github.com/luanti-org/luanti.git
 
       - type: script
         dest-filename: luanti.sh
