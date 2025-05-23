@@ -5,7 +5,6 @@ sdk: org.freedesktop.Sdk
 command: luanti
 rename-icon: luanti
 rename-appdata-file: net.minetest.minetest.metainfo.xml
-rename-desktop-file: net.minetest.minetest.desktop
 copy-icon: true
 finish-args:
   - --socket=wayland
