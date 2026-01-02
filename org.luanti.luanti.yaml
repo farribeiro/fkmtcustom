@@ -27,6 +27,8 @@ cleanup:
 modules:
   - name: libluajit
     no-autogen: true
+    config-opts:
+      - "-DLUAJIT_ENABLE_GC64=1"
     make-args:
       - PREFIX=/app
     make-install-args:
