@@ -60,4 +60,4 @@ modules:
       - type: script
         dest-filename: luanti.sh
         commands:
-          - 'MINETEST_USER_PATH=$HOME/.var/app/org.luanti.luanti/.luanti exec luanti.bin "$@"'
+          - 'LUANTI_USER_PATH=$HOME/.var/app/org.luanti.luanti/.luanti exec luanti.bin "$@"'
