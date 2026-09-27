@@ -40,6 +40,22 @@ modules:
         url: https://github.com/LuaJIT/LuaJIT.git
         branch: v2.1
 
+   - name: libzip
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DBUILD_DOC=OFF
+      - -DBUILD_EXAMPLES=OFF
+      - -DBUILD_REGRESS=OFF
+      - -DBUILD_TOOLS=OFF
+    cleanup:
+      - /bin
+      - /include
+      - /lib/cmake
+      - /lib/pkgconfig
+    sources:
+      - type: git
+        url: https://github.com/nih-at/libzip.git
+
   - name: minetest
     buildsystem: cmake-ninja
     config-opts:
