@@ -40,7 +40,7 @@ modules:
         url: https://github.com/LuaJIT/LuaJIT.git
         branch: v2.1
 
-   - name: libzip
+  - name: libzip
     buildsystem: cmake-ninja
     config-opts:
       - -DBUILD_DOC=OFF
