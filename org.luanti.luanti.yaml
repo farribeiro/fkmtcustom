@@ -55,6 +55,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/nih-at/libzip.git
+        branch: main
 
   - name: minetest
     buildsystem: cmake-ninja
