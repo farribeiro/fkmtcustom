@@ -37,7 +37,7 @@ modules:
       - /bin
     sources:
       - type: git
-        url: https://github.com/LuaJIT/LuaJIT.git
+        url: https://github.com/LuaJIT/LuaJIT
         branch: v2.1
 
   - name: libzip
@@ -54,7 +54,7 @@ modules:
       - /lib/pkgconfig
     sources:
       - type: git
-        url: https://github.com/nih-at/libzip.git
+        url: https://github.com/nih-at/libzip
         branch: main
 
   - name: minetest
@@ -72,7 +72,7 @@ modules:
       - install -Dm755 luanti.sh $FLATPAK_DEST/bin/luanti
     sources:
       - type: git
-        url: https://github.com/luanti-org/luanti.git
+        url: https://github.com/luanti-org/luanti
 
       - type: script
         dest-filename: luanti.sh
