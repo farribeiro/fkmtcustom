@@ -10,7 +10,7 @@ finish-args:
   - --socket=wayland
   - --socket=pulseaudio
   - --filesystem=xdg-run/pipewire-0
-  - --device=all
+  - --device=dri
   - --share=network
   - --share=ipc
   - --env=MESA_LOADER_DRIVER_OVERRIDE=zink
