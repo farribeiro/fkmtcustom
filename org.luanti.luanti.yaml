@@ -45,6 +45,7 @@ modules:
     config-opts:
       - -DBUILD_DOC=OFF
       - -DBUILD_EXAMPLES=OFF
+      - -DBUILD_OSSFUZZ=OFF
       - -DBUILD_REGRESS=OFF
       - -DBUILD_TOOLS=OFF
     cleanup:
