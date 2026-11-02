@@ -62,11 +62,11 @@ modules:
   - name: minetest
     buildsystem: cmake-ninja
     config-opts:
-      - "-DENABLE_CURSES=0"
-      - "-DENABLE_GETTEXT=1"
-      - "-DUSE_SDL3=TRUE"
-      - "-DBUILD_UNITTESTS=FALSE"
-      - "-DENABLE_OPENGL3=TRUE"
+      - -DENABLE_CURSES=0
+      - -DENABLE_GETTEXT=1
+      - -DUSE_SDL3=TRUE
+      - -DBUILD_UNITTESTS=FALSE
+      - -DENABLE_OPENGL3=TRUE
     cleanup:
       - "/share/minetest/games/devtest"
     post-install:
